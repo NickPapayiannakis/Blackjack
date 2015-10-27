@@ -1,0 +1,27 @@
+1.Implement the core BlackJack rules (details in the next section)
+2. Write unit tests that prove that your game implements those rules
+3. Pick two or more of the following ways to make your game better
+  a. Make the user experience better (e.g. make things look nicer, introduce a delay when dealing/revealing cards)
+  b. Give the user casino chips and allow them to bet and win (or lose!)
+  c. Implement the full rules (allow the user to split or double, you can look those rules up online)
+  d. Use the same shuffled stack of one or more decks across rounds, giving people that can count cards an advantage.
+
+//=====================//=====================//=====================//=====================//
+
+Problem: tracking scores
+
+Test:
+
+INPUT:
+OUTPUT:
+
+OVERVIEW
+
+1.
+
+PSEUDO-CODE
+
+
+//dealer should not flip card unless dealer hits stand or 21
+//reinitialize after stand or win or bust
+//compare functionality

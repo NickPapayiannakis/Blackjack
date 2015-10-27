@@ -1,5 +1,5 @@
 class window.HandView extends Backbone.View
-  className: 'hand'
+  className: 'm-hand'
 
   template: _.template '<h2><% if(isDealer){ %>Dealer<% }else{ %>You<% } %> (<span class="score"></span>)</h2>'
 
@@ -13,4 +13,3 @@ class window.HandView extends Backbone.View
     @$el.append @collection.map (card) ->
       new CardView(model: card).$el
     @$('.score').text @collection.scores()[0]
-

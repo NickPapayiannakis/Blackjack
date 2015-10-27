@@ -1,4 +1,5 @@
 assert = chai.assert
+expect = chai.expect
 
 describe 'deck', ->
   deck = null
@@ -8,8 +9,16 @@ describe 'deck', ->
     deck = new Deck()
     hand = deck.dealPlayer()
 
-  describe 'hit', ->
-    it 'should give the last card from the deck', ->
-      assert.strictEqual deck.length, 50
-      assert.strictEqual deck.last(), hand.hit()
-      assert.strictEqual deck.length, 49
+  it "should have an intialize method", ->
+
+    expect(deck.initialize).to.be.a('function')
+
+
+  it "should have an dealPlayer method", ->
+
+    expect(deck.dealPlayer).to.be.a('function')
+
+
+  it "should have an dealDealer method", ->
+
+    expect(deck.dealDealer).to.be.a('function')

@@ -1,22 +1,32 @@
 <html>
   <head>
+
     <title>Blackjack</title>
+
+    <link href="styles/reset.css" rel="stylesheet" type="text/css" media="screen">
     <link href="styles/app.css" rel="stylesheet" type="text/css" media="screen">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+
   </head>
   <body>
+    <header id="header">
+      <h1>BlackJack</h1>
+    </header>
+    <!-- dependencies-->
     <script src="lib/jquery.js"></script>
     <script src="lib/underscore.js"></script>
     <script src="lib/backbone.js"></script>
 
+    <!--backbone-->
     <script src="compiled/src/models/Card.js"></script>
     <script src="compiled/src/collections/Hand.js"></script>
     <script src="compiled/src/collections/Deck.js"></script>
     <script src="compiled/src/models/App.js"></script>
-
     <script src="compiled/src/views/CardView.js"></script>
     <script src="compiled/src/views/HandView.js"></script>
     <script src="compiled/src/views/AppView.js"></script>
-
     <script src="compiled/src/main.js"></script>
+
   </body>
 </html>

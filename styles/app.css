@@ -1,16 +1,115 @@
-.card {
-  float: left;
-  border: solid 1px black;
-  width: 100px;
-  border-radius: 5px;
-  height: 140px;
-  margin-right: 20px;
+/*
+===========================================
+                  BASE
+===========================================
+*/
+
+body {
+  background-color: #ddd;
+  font-family: 'Roboto', sans-serif;
 }
 
-.covered {
-  background-color: black;
+#header {
+  display: block;
+  height: 200px;
+  width: 100%;
+  padding: 30px;
+  margin-top: -25px;
+  background-color: #000;
+  background-image: url(../img/textures/header.png);
+  box-shadow: 0 1px 1px #555;
 }
 
-.hand {
+h1 {color: #ddd;}
+
+/*
+===========================================
+                 LAYOUT
+===========================================
+*/
+
+.l-board {
+  width: 600px;
+  margin: -100px auto 30px auto;
+  padding: 40px 5px 30px 10px;
+  background-color: #fff;
   overflow: auto;
+
+  border-radius: 1px;
+  -webkit-box-shadow: 1px 2px 7px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 2px 7px 0px rgba(0,0,0,0.75);
+  box-shadow: 1px 2px 7px 0px rgba(0,0,0,0.75);
+}
+
+/*
+===========================================
+                 MODULES
+===========================================
+*/
+
+.m-card {
+  float: left;
+  border-radius: 1px;
+  margin: 0 15px 30px 0;
+  border-radius: 1px;
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+.m-hand {
+  float: left;
+  margin-top: -15px;
+  clear: both;
+}
+
+.m-button {
+  float: right;
+  padding-top:7px;
+  height: 30px;
+  width: 100px;
+  margin-right: 10px;
+  box-shadow: 1px 1px 1px #777;
+  background-color: #ddd;
+  text-align: center;
+  color: #aaa;
+  border-radius: 1px;
+}
+
+.m-controls {
+  margin-top: -20px;
+  float:right;
+}
+
+/* needs hard coding */
+.m-notification {
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 400px;
+  height: 300px;
+}
+
+/*
+===========================================
+                 STATE
+===========================================
+*/
+
+.card-covered {
+  background-color: black;
+  background-image: url(../img/card-back.png);
+}
+
+.m-button:hover {
+  background-color: #eee;
+  color: #000;
+  transition: color 0.1s, background-color 0.1s;
+}
+
+.m-button:active {
+  box-shadow: none;
 }
